@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Kic&eacute;k&eacute;l&agrave; ?</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Kic&eacute;k&eacute;l&agrave;, k&eacute;pal&agrave;...</h1>
+    <form action="#">
+      <input type="text" placeholder="Nom" class="student-first-name text-field" required>
+      <input type="text" placeholder="Pr&eacute;nom" class="student-last-name text-field" required>
+      <input type="text" placeholder="URL de la photo" class="student-url text-field">
+      <input type="submit" value="Ajouter l'&eacute;tudiant">
+    </form>
+    <div class="stats">
+      <p>Il y a <span class="student-total">0</span> &eacute;tudiants.</p>
+      <p>Parmi eux, <span class="student-total">0</span> sont l&agrave;, et <span class="student-total">0</span> ne sont pas l&agrave;.</p>
+    </div>
+    <div class="students">
+      <ul class="student-list"></ul>
+    </div>
+
+  <!-- jQuery and Backbone -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+  <script src="lib/backbone.localStorage.js"></script>
+
+  <!-- Our app's scripts -->
+  <script src="script/models/student-model.js"></script>
+  <script src="script/collections/student-collection.js"></script>
+  <script src="script/views/student-list.js"></script>
+  <script src="script/app.js"></script>
+
+</body>
+</html>
